@@ -11,7 +11,7 @@ const List: React.FC<ListProps> = ({items, removeItem}) => {
     return (
         <ul className={styles.list}>
             {items.map(item =>  
-                <RemovableListItem text={item.text} id={item.key} removeItem={removeItem}/>   
+                <RemovableListItem text={item.text} key={item.key} id={item.key} removeItem={removeItem}/>   
             )}
         </ul>
     )
